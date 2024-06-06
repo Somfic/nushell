@@ -889,6 +889,7 @@ $env.config = {
 }
 
 alias cd.. = cd ..
+alias c = committer
 
 # Zoxide
 source .zoxide.nu
