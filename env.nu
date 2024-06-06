@@ -99,8 +99,9 @@ $env.NU_PLUGIN_DIRS = [
 # To load from a custom file you can use:
 # source ($nu.default-config-dir | path join 'custom.nu')
 
+cargo install committer
+
 # Zoxide configuration
-# If on windows
 zoxide init nushell --cmd cd | save -f ~/nushell/.zoxide.nu
 
 # Carapace configuration
