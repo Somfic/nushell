@@ -110,3 +110,17 @@ carapace _carapace nushell | save --force ~/nushell/.carapace.nu
 
 # Starship configuration
 starship init nu | save -f ~/nushell/.starship.nu
+
+# Yazi
+def --env yy [...args] {
+	let tmp = (mktemp -t "yazi-cwd.XXXXXX")
+	yazi ...$args --cwd-file $tmp
+	let cwd = (open $tmp)
+	if $cwd != "" and $cwd != $env.PWD {
+		cd $cwd
+	}
+	rm -fp $tmp
+}
+
+# Default editor
+$env.EDITOR = "nvim"
