@@ -910,4 +910,4 @@ source .carapace.nu
 use .starship.nu
 
 clear
-neofetch
+fastfetch
