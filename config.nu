@@ -911,3 +911,5 @@ use .starship.nu
 
 clear
 fastfetch
+
+source env-secret.nu
